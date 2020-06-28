@@ -6,6 +6,9 @@ engines:
   metric:
     exclude_paths:
       - config/engines.yml
+  remark-int:
+    exclude_paths:
+      - config/engines.yml
   coverage:
     exclude_paths:
       - config/engines.yml
@@ -16,4 +19,4 @@ languages:
 exclude_paths:
   - '**.min.js'
   - '**.spec.**'
-  - '**.spec.md'
+  - '**.md'

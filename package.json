@@ -31,7 +31,7 @@
   ],
   "scripts": {
     "clear": "rimraf ./dist/* ./temp/* ./test/* ./node_modules ./package-lock.json",
-    "prebuild": "rimraf ./dist/* && eslint --ext .ts,.tsx ./src",
+    "prebuild": "rimraf ./dist/*",
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project ./ --module commonjs --target es5 --outDir ./dist/cjs",
     "build:esm": "tsc --project ./ --module es6 --declaration --declarationDir ./dist/esm --outDir ./dist/esm",

@@ -1,0 +1,156 @@
+{
+  "name": "@gregoranders/react-spinner",
+  "version": "0.0.1",
+  "description": "React Spinner Component",
+  "author": "Gregor Anders <gregor.anders@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregoranders/react-spinner/issues"
+  },
+  "homepage": "https://gregoranders.github.io/react-spinner/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregoranders/react-spinner.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": false,
+  "keywords": [
+    "ci",
+    "jest",
+    "react",
+    "typescript"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/.gitignore"
+  ],
+  "scripts": {
+    "clear": "rimraf ./dist/* ./temp/* ./test/* ./node_modules ./package-lock.json",
+    "prebuild": "rimraf ./dist/* && eslint --ext .ts,.tsx ./src",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --project ./ --module commonjs --target es5 --outDir ./dist/cjs",
+    "build:esm": "tsc --project ./ --module es6 --declaration --declarationDir ./dist/esm --outDir ./dist/esm",
+    "postbuild": "rimraf ./dist/esm/index.d.ts* && npm run scss && npm run types && npm run lint",
+    "scss": "cpx './src/styles.scss' './dist/'",
+    "types": "cpx './build/cjs/index.d.ts*' './dist/'",
+    "lint": "eslint --no-eslintrc --config .eslintrc-cc.json --ext js --fix ./dist",
+    "test": "jest",
+    "prepare": "npm test && npm run build",
+    "codeclimate": "docker run --interactive --tty --rm --env CODECLIMATE_CODE=\"$PWD\" --volume \"$PWD\":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate analyze",
+    "changelog": "changelog"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run prepare",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts,.tsx"
+    ]
+  },
+  "jest-html-reporter": {
+    "pageTitle": "react-spinner",
+    "outputPath": "<rootDir>/test/index.html"
+  },
+  "jest-junit": {
+    "outputDirectory": "<rootDir>/test"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/test/coverage",
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.ts",
+      "<rootDir>/src/**/*.tsx",
+      "!<rootDir>/node_modules/**",
+      "!<rootDir>/dist/**",
+      "!<rootDir>/temp/**",
+      "!<rootDir>/test/**"
+    ],
+    "coverageReporters": [
+      "lcovonly",
+      "html",
+      "text",
+      "text-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "reporters": [
+      "jest-html-reporter",
+      "jest-spec-reporter",
+      "jest-junit"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "transform": {
+      "\\.ts(x)?$": "ts-jest"
+    },
+    "testRegex": "/src/.*\\.spec\\.ts(x)?$"
+  },
+  "peerDependencies": {
+    "prop-types": "15.7.2",
+    "react": "16.13.1"
+  },
+  "devDependencies": {
+    "@microsoft/api-documenter": "7.8.19",
+    "@microsoft/api-extractor": "7.8.15",
+    "@testing-library/jest-dom": "5.11.0",
+    "@testing-library/react": "10.4.3",
+    "@types/jest": "26.0.3",
+    "@types/prop-types": "15.7.3",
+    "@types/react": "16.9.41",
+    "@types/react-dom": "16.9.8",
+    "@types/react-is": "16.7.1",
+    "@typescript-eslint/eslint-plugin": "3.4.0",
+    "@typescript-eslint/parser": "3.4.0",
+    "cpx": "1.5.0",
+    "cross-env": "7.0.2",
+    "eslint": "7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-jest": "23.17.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-unicorn": "20.1.0",
+    "generate-changelog": "1.8.0",
+    "husky": "4.2.5",
+    "jest": "26.1.0",
+    "jest-cli": "26.1.0",
+    "jest-html-reporter": "3.1.3",
+    "jest-junit": "11.0.1",
+    "jest-spec-reporter": "1.0.14",
+    "lint-staged": "10.2.11",
+    "livereloadx": "0.3.10",
+    "prettier": "2.0.5",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-is": "16.13.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.1.1",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  }
+}

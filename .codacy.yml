@@ -21,6 +21,7 @@ exclude_paths:
   - '.vscode/**'
   - '**.json'
   - '**.yml'
+  - '**.scss'
   - '**.min.js'
   - '**.spec.**'
   - '**.md'

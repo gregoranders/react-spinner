@@ -17,6 +17,10 @@ languages:
     extensions:
       - '-css.resource'
 exclude_paths:
+  - '.github/**'
+  - '.vscode/**'
+  - '**.json'
+  - '**.yml'
   - '**.min.js'
   - '**.spec.**'
   - '**.md'

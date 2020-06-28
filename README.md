@@ -120,6 +120,6 @@ npm run clear
 [typescript-url]: http://www.typescriptlang.org/
 [jest-url]: https://jestjs.io/
 [react-url]: https://reactjs.org/
-[codacy-imge]: https://app.codacy.com/project/badge/Grade/ba567567ab7c45eeab91ca4fe03011d4
+[codacy-imge]: https://app.codacy.com/project/badge/Grade/94ba1b3b86ba4b0187f5c2ffe9085f31
 [codacy-url]: https://www.codacy.com/manual/gregoranders/react-spinner
 [suspense-url]: https://reactjs.org/docs/concurrent-mode-suspense.html

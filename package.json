@@ -29,6 +29,9 @@
     "dist",
     "!dist/.gitignore"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clear": "rimraf ./dist/* ./temp/* ./test/* ./node_modules ./package-lock.json",
     "prebuild": "rimraf ./dist/*",

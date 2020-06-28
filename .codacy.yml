@@ -1,0 +1,27 @@
+---
+engines:
+  duplication:
+    exclude_paths:
+      - config/engines.yml
+  metric:
+    exclude_paths:
+      - config/engines.yml
+  remark-int:
+    exclude_paths:
+      - config/engines.yml
+  coverage:
+    exclude_paths:
+      - config/engines.yml
+languages:
+  css:
+    extensions:
+      - '-css.resource'
+exclude_paths:
+  - '.github/**'
+  - '.vscode/**'
+  - '**.json'
+  - '**.yml'
+  - '**.scss'
+  - '**.min.js'
+  - '**.spec.**'
+  - '**.md'

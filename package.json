@@ -119,7 +119,7 @@
     "react": "17.0.1"
   },
   "devDependencies": {
-    "@microsoft/api-documenter": "7.11.3",
+    "@microsoft/api-documenter": "7.13.5",
     "@microsoft/api-extractor": "7.12.0",
     "@testing-library/jest-dom": "5.11.6",
     "@testing-library/react": "11.2.2",

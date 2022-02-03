@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 // eslint-disable-next-line prettier/prettier
 import { createElement, memo } from 'react';
 // eslint-disable-next-line prettier/prettier

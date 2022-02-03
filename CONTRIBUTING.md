@@ -44,7 +44,7 @@ This command installs everything which is required for building and testing the 
 
 `npm run watch` executes the build in watch mode.
 
-## Ensure code quality [`docker required`]
+## Ensure code quality `docker required`
 
 `npm run codeclimate` executes the [Code Climate](docs/codeclimate.md) checks
 
@@ -72,8 +72,8 @@ This command installs everything which is required for building and testing the 
   - Save integration time and run code quality checks locally with `npm run codeclimate` and `npm run codacy`
   - When all tests pass, everything's fine.
 - Commit your changes
-  - Please provide a git message that explains what you've done following the [conventional commits][commit-url] pattern.
   <!-- markdownlint-disable MD013 -->
+  - Please provide a git message that explains what you've done following the [conventional commits][conventional-commit-url] pattern.
   - `react-spinner` uses [generate-changelog](https://www.npmjs.com/package/generate-changelog), so please make sure your commits follow the [conventional commit][conventional-commit-url] pattern.
   <!-- markdownlint-enable MD013 -->
   - Commit to the forked repository.

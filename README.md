@@ -2,7 +2,7 @@
 
 [<img src="./typescript.svg" />][typescript-url] [<img src="./react.svg" />][react-url]
 
-## [React][react-url] Spinner intended to be used with [`Suspense`][suspense-url]
+## [React][react-url] [Spinner](./docs/index.md) intended to be used with [`Suspense`][suspense-url]
 
 [![License][license-image]][license-url]
 [![Issues][issues-image]][issues-url]

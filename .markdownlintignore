@@ -1,3 +1,6 @@
+etc/**
+docs/**
+docs-tmp/**
 node_modules/**
 CHANGELOG.md
 LICENSE

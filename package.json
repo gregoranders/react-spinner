@@ -55,7 +55,7 @@
   },
   "lint-staged": {
     "*.{ts, tsx}": [
-      "eslint --ext .ts,.tsx"
+      "eslint --ext .ts,.tsx --fix --quiet"
     ],
     "*.md": [
       "markdownlint"

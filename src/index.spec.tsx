@@ -1,4 +1,6 @@
+// eslint-disable-next-line prettier/prettier
 import { createElement, memo } from 'react';
+// eslint-disable-next-line prettier/prettier
 import { act, render } from '@testing-library/react';
 
 import * as TestSubject from '.';
@@ -7,6 +9,14 @@ const advanceTimer = (count: number) => {
   act(() => {
     jest.advanceTimersByTime(count);
   });
+};
+
+const generateIndicatorResult = (text: string, count: number) => {
+  let result = '';
+  for (let index = 0; index < count; index++) {
+    result += text;
+  }
+  return result;
 };
 
 describe('react-spinner', () => {
@@ -29,14 +39,6 @@ describe('react-spinner', () => {
       expect(TestSubject.default).toStrictEqual(memo(TestSubject.Spinner));
     });
   });
-
-  const generateIndicatorResult = (text: string, count: number) => {
-    let result = '';
-    for (let idx = 0; idx < count; idx++) {
-      result += text;
-    }
-    return result;
-  };
 
   describe('snapshot', () => {
     it('should match default', () => {

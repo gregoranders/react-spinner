@@ -1,27 +1,35 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier", "jest", "unicorn", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "jest", "prettier", "react", "unicorn"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
-    "plugin:unicorn/recommended",
-    "plugin:prettier/recommended"
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:unicorn/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2020,
     "sourceType": "module",
-    "ecmaFeatures": {}
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
-    "es2020": true,
-    "es6": true,
-    "browser": false,
+    "es2021": true,
+    "browser": true,
+    "node": true,
     "jest": true
   },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "createElement" }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "off",
     "sort-imports": [
       "error",
       {
@@ -32,5 +40,9 @@
       }
     ]
   },
-  "settings": {}
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

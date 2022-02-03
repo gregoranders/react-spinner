@@ -19,5 +19,7 @@ languages:
 exclude_paths:
   - '.github/**'
   - '.vscode/**'
+  - 'docs/**'
   - 'docs-tmp/**'
+  - '**.md'
   - 'commitlint.config.js'

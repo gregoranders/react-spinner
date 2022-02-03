@@ -17,8 +17,6 @@ plugins:
     config: .markdownlint.yaml
   nodesecurity:
     enabled: true
-  requiresafe:
-    enabled: true
   sass-lint:
     enabled: true
   scss-lint:

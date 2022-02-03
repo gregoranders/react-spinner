@@ -59,7 +59,9 @@ describe('react-spinner', () => {
 
     const element = result.container.firstChild;
 
-    if (!element) return;
+    if (!element) {
+      throw new Error('Child element missing');
+    }
 
     expected = generateIndicatorResult(indicator, 1);
     expect(element.textContent).toStrictEqual(expected);

@@ -1,9 +1,16 @@
 {
   "recommendations": [
-    "coenraads.bracket-pair-colorizer",
+    "eamodio.gitlens",
+    "donjayamanne.githistory",
+    "dsznajder.es7-react-js-snippets",
+    "davidanson.vscode-markdownlint",
+    "vivaxy.vscode-conventional-commits",
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
+    "kavod-io.vscode-jest-test-adapter",
+    "smarschollek.vscode-react-scripts-test-adapter",
     "orta.vscode-jest",
+    "hbenl.vscode-test-explorer",
     "pkief.material-icon-theme",
     "marlosirapuan.nord-deep",
     "eg2.vscode-npm-script",
@@ -13,6 +20,7 @@
     "visualstudioexptteam.vscodeintellicode",
     "ms-azuretools.vscode-docker",
     "cschleiden.vscode-github-actions",
-    "github.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "christian-kohler.npm-intellisense"
   ]
 }

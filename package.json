@@ -141,7 +141,6 @@
     "jest-junit": "12.0.0",
     "jest-spec-reporter": "1.0.14",
     "lint-staged": "12.3.3",
-    "livereloadx": "0.3.10",
     "prettier": "2.2.1",
     "prop-types": "15.7.2",
     "react": "17.0.1",

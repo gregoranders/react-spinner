@@ -1,26 +1,41 @@
 version: '2'
 plugins:
+  duplication:
+    enabled: true
   editorconfig:
     enabled: true
-  tslint:
-    enabled: false
   eslint:
     enabled: true
-    channel: 'eslint-6'
     config:
       config: .eslintrc-cc.json
   fixme:
     enabled: true
   git-legal:
     enabled: true
+  markdownlint:
+    enabled: true
+    config: .markdownlint.yaml
+  nodesecurity:
+    enabled: true
+  requiresafe:
+    enabled: true
+  sass-lint:
+    enabled: true
+  scss-lint:
+    enabled: true
+  structure:
+    enabled: true
 exclude_patterns:
   - '**/.github'
-  - '**/.circleci'
+  - '**/.husky'
   - '**/.vscode'
-  - '**/*.svg'
   - '**/dist'
   - '**/temp'
   - '**/test'
   - '**/docs'
+  - '**/docs-tmp'
+  - '**/etc'
   - '**/node_modules/'
+  - '**/*.svg'
+  - '**/*.md'
   - '**/commitlint.config.js'

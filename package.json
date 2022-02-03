@@ -41,10 +41,11 @@
     "postbuild": "rimraf ./dist/esm/index.d.ts* && npm run scss && npm run types && npm run lint",
     "scss": "cpx './src/styles.scss' './dist/'",
     "types": "cpx './build/cjs/index.d.ts*' './dist/'",
-    "lint": "eslint --no-eslintrc --config .eslintrc-cc.json --ext js --fix ./dist",
+    "lint": "eslint --no-eslintrc --config .eslintrc-dist.json --ext js --fix ./dist",
     "test": "jest",
     "prepare": "husky install",
-    "codeclimate": "docker run --interactive --tty --rm --env CODECLIMATE_CODE=\"$PWD\" --volume \"$PWD\":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate analyze",
+    "codeclimate": "docker run --interactive --rm --env CODECLIMATE_CODE=\"$PWD\" --volume \"$PWD\":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate analyze",
+    "codacy": "docker run --interactive --rm --env CODACY_CODE=\"$PWD\" --volume \"$PWD\":\"$PWD\" --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp:/tmp codacy/codacy-analysis-cli analyze --directory \"$PWD\"",
     "changelog": "changelog"
   },
   "lint-staged": {

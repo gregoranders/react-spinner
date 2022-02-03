@@ -63,10 +63,16 @@ npm run build
 npm test
 ```
 
-#### Code Climate Checks [docker required](docs/index.md)
+#### Code Climate Checks [docker required](docs/codeclimate.md)
 
 ```sh
 npm run codeclimate
+```
+
+#### Codacy Checks [docker required](docs/codacy.md)
+
+```sh
+npm run codacy
 ```
 
 #### Clear

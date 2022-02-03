@@ -1,4 +1,9 @@
+/**
+ * @jest-environment jsdom
+ */
+// eslint-disable-next-line prettier/prettier
 import { createElement, memo } from 'react';
+// eslint-disable-next-line prettier/prettier
 import { act, render } from '@testing-library/react';
 
 import * as TestSubject from '.';
@@ -7,6 +12,14 @@ const advanceTimer = (count: number) => {
   act(() => {
     jest.advanceTimersByTime(count);
   });
+};
+
+const generateIndicatorResult = (text: string, count: number) => {
+  let result = '';
+  for (let index = 0; index < count; index++) {
+    result += text;
+  }
+  return result;
 };
 
 describe('react-spinner', () => {
@@ -30,14 +43,6 @@ describe('react-spinner', () => {
     });
   });
 
-  const generateIndicatorResult = (text: string, count: number) => {
-    let result = '';
-    for (let idx = 0; idx < count; idx++) {
-      result += text;
-    }
-    return result;
-  };
-
   describe('snapshot', () => {
     it('should match default', () => {
       const component = render(<TestSubject.default />);
@@ -54,7 +59,9 @@ describe('react-spinner', () => {
 
     const element = result.container.firstChild;
 
-    if (!element) return;
+    if (!element) {
+      throw new Error('Child element missing');
+    }
 
     expected = generateIndicatorResult(indicator, 1);
     expect(element.textContent).toStrictEqual(expected);

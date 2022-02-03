@@ -1,8 +1,12 @@
-span.spinner {
+$spinner-color: rgba(0 0 0 100%);
+$spinner-text-shadow-first: rgba(255 255 255 10%);
+$spinner-text-shadow-second: rgba(0 0 0 50%);
+
+.spinner {
+  color: $spinner-color;
   display: block;
-  text-align: center;
   font-size: 12em;
   font-weight: 900;
-  color: black;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-shadow: -1px -1px 1px $spinner-text-shadow-first, 4px 4px 4px $spinner-text-shadow-second;
 }

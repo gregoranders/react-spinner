@@ -1,17 +1,17 @@
 ---
 engines:
   duplication:
-    exclude_paths:
-      - config/engines.yml
+    enabled: true
   metric:
-    exclude_paths:
-      - config/engines.yml
+    enabled: true
   remark-int:
-    exclude_paths:
-      - config/engines.yml
+    enabled: true
   coverage:
-    exclude_paths:
-      - config/engines.yml
+    enabled: true
+  eslint:
+    enabled: true
+  tslint:
+    enabled: false
 languages:
   css:
     extensions:
@@ -19,9 +19,7 @@ languages:
 exclude_paths:
   - '.github/**'
   - '.vscode/**'
-  - '**.json'
-  - '**.yml'
-  - '**.scss'
-  - '**.min.js'
-  - '**.spec.**'
+  - 'docs/**'
+  - 'docs-tmp/**'
   - '**.md'
+  - 'commitlint.config.js'

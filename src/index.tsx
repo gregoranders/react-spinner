@@ -3,12 +3,15 @@
  *
  * @packageDocumentation
  */
+// eslint-disable-next-line prettier/prettier
 import { createElement, memo, useEffect, useState } from 'react';
+// eslint-disable-next-line prettier/prettier
 import { number as IsNumber, string as IsString } from 'prop-types';
 
 /**
  * @public
  */
+// eslint-disable-next-line unicorn/prevent-abbreviations
 export type Props = Readonly<{
   /**
    * CSS class
@@ -33,7 +36,7 @@ export type Props = Readonly<{
  */
 const generate = (text: string, count: number) => {
   let result = '';
-  for (let idx = 0; idx < count; idx++) {
+  for (let index = 0; index < count; index++) {
     result += text;
   }
   return { __html: result };

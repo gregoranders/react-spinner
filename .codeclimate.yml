@@ -23,3 +23,4 @@ exclude_patterns:
   - '**/test'
   - '**/docs'
   - '**/node_modules/'
+  - '**/commitlint.config.js'

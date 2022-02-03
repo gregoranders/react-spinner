@@ -13,7 +13,7 @@
     "url": "git+https://github.com/gregoranders/react-spinner.git"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=12"
   },
   "private": false,
   "keywords": [

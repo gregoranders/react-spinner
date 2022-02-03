@@ -11,4 +11,6 @@
 
 ## Reporting a Vulnerability
 
-[Create Issue](https://github.com/gregoranders/react-spinner/issues/new?labels=bug&template=bug_report.md&title=Security+Issue)
+[Create Issue][create-issue-url]
+
+[create-issue-url]: https://github.com/gregoranders/react-spinner/issues/new?labels=bug&template=bug_report.md&title=Security+Issue

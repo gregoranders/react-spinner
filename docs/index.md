@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # Code Climate on localhost
 
 ## Docker image sizes

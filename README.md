@@ -4,16 +4,17 @@
 
 ## [React][react-url] Spinner intended to be used with [`Suspense`][suspense-url]
 
-[![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
 [![Issues][issues-image]][issues-url]
-[![Code maintainability][code-maintainability-image]][code-maintainability-url] [![Code issues][code-issues-image]][code-issues-url] [![Code Technical Debt][code-tech-debt-image]][code-tech-debt-url]
+[![Code maintainability][code-maintainability-image]][code-maintainability-url]
+[![Code issues][code-issues-image]][code-issues-url] [![Code Technical Debt][code-tech-debt-image]][code-tech-debt-url]
 
 [![Codacy Badge][codacy-imge]][codacy-url]
 
-[![Main Language][language-image]][code-metric-url] [![Languages][languages-image]][code-metric-url] [![Code Size][code-size-image]][code-metric-url] [![Repo-Size][repo-size-image]][code-metric-url]
+[![Main Language][language-image]][code-metric-url] [![Languages][languages-image]][code-metric-url]
+[![Code Size][code-size-image]][code-metric-url] [![Repo-Size][repo-size-image]][code-metric-url]
 
-## Features
+### Features
 
 - [TypeScript][typescript-url]
 - [Jest][jest-url] Unit Tests with Code Coverage
@@ -27,7 +28,7 @@
 | [![Master Build][master-build-image]][master-url]                | [![Master Coverage][master-coveralls-image]][master-coveralls-url]         | [![Master Version][master-version-image]][master-version-url]                |
 | [![Development Build][development-build-image]][development-url] | [![Test Coverage][development-coveralls-image]][development-coveralls-url] | [![Development Version][development-version-image]][development-version-url] |
 
-## Example
+#### Example
 
 ```tsx
 import React, { Suspense } from 'react';
@@ -38,47 +39,39 @@ export const App = () => {
 };
 ```
 
-### Clone repository
+#### Clone repository
 
-```
+```sh
 git clone https://github.com/gregoranders/react-spinner
 ```
 
-### Install dependencies
+#### Install dependencies
 
-```
+```sh
 npm install
 ```
 
-### Build
+#### Build
 
-```
+```sh
 npm run build
 ```
 
-### Testing
-
 #### Test using [Jest][jest-url]
 
-```
+```sh
 npm test
 ```
 
-### Code Climate Checks [docker required](docs/index.md)
+#### Code Climate Checks [docker required](docs/index.md)
 
-```
+```sh
 npm run codeclimate
 ```
 
-### Run
+#### Clear
 
-```
-npm start
-```
-
-### Clear
-
-```
+```sh
 npm run clear
 ```
 
@@ -87,10 +80,6 @@ npm run clear
 [development-url]: https://github.com/gregoranders/react-spinner/tree/development
 [repository-url]: https://github.com/gregoranders/react-spinner
 [code-metric-url]: https://github.com/gregoranders/react-spinner/search?l=TypeScript
-[travis-url]: https://travis-ci.org/gregoranders/react-spinner
-[travis-image]: https://travis-ci.org/gregoranders/react-spinner.svg?branch=master
-[daviddm-url]: https://david-dm.org/gregoranders/react-spinner
-[daviddm-image]: https://david-dm.org/gregoranders/react-spinner.svg?branch=master
 [license-url]: https://github.com/gregoranders/react-spinner/blob/master/LICENSE
 [license-image]: https://img.shields.io/github/license/gregoranders/react-spinner.svg
 [master-version-url]: https://github.com/gregoranders/react-spinner/blob/master/package.json

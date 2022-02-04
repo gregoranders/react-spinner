@@ -13,13 +13,9 @@ engines:
   remark-lint:
     enabled: true
   stylelint:
-    enables: true
+    enabled: true
   tslint:
     enabled: false
-languages:
-  css:
-    extensions:
-      - '-css.resource'
 exclude_paths:
   - '.github/**'
   - '.vscode/**'

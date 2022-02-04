@@ -1,15 +1,19 @@
 ---
 engines:
-  duplication:
-    enabled: true
-  metric:
-    enabled: true
-  remark-int:
-    enabled: true
   coverage:
+    enabled: true
+  duplication:
     enabled: true
   eslint:
     enabled: true
+  markdownlint:
+    enabled: true
+  metric:
+    enabled: true
+  remark-lint:
+    enabled: true
+  stylelint:
+    enables: true
   tslint:
     enabled: false
 languages:
@@ -21,5 +25,4 @@ exclude_paths:
   - '.vscode/**'
   - 'docs/**'
   - 'docs-tmp/**'
-  - '**.md'
   - 'commitlint.config.js'

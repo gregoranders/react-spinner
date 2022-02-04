@@ -38,7 +38,7 @@
     "codacy": {
       "description": "Changes which affect Codacy integration"
     },
-    "code climate": {
+    "codeclimate": {
       "description": "Changes which affect Code Climate integration"
     },
     "github": {

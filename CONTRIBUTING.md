@@ -74,7 +74,7 @@ This command installs everything which is required for building and testing the 
 - Commit your changes
   <!-- markdownlint-disable MD013 -->
   - Please provide a git message that explains what you've done following the [conventional commits][conventional-commit-url] pattern.
-  - `react-spinner` uses [generate-changelog](https://www.npmjs.com/package/generate-changelog), so please make sure your commits follow the [conventional commit][conventional-commit-url] pattern.
+  - `react-spinner` uses [conventional-changelog-cli](https://www.npmjs.com/package/conventional-changelog-cli), so please make sure your commits follow the [conventional commit][conventional-commit-url] pattern.
   <!-- markdownlint-enable MD013 -->
   - Commit to the forked repository.
   - [Sign][sign-url] your commit.

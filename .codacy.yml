@@ -25,4 +25,5 @@ exclude_paths:
   - '.vscode/**'
   - 'docs/**'
   - 'docs-tmp/**'
+  - 'CHANGELOG.md'
   - 'commitlint.config.js'

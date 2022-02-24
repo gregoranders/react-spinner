@@ -1,6 +1,9 @@
+<!-- lint disable retext-readability -->
 # Contributing Guide
 
+<!--lint disable write-good-->
 Contributing to `react-spinner` is fairly easy. This document shows you how to
+<!--lint enable write-good-->
 get the project, run all provided tests and generate a production-ready build.
 
 It also covers provided tasks that help you develop with `react-spinner`.
@@ -73,8 +76,10 @@ This command installs everything which is required for building and testing the 
   - When all tests pass, everything's fine.
 - Commit your changes
   <!-- markdownlint-disable MD013 -->
+  <!--lint disable maximum-line-length-->
   - Please provide a git message that explains what you've done following the [conventional commits][conventional-commit-url] pattern.
-  - `react-spinner` uses [generate-changelog](https://www.npmjs.com/package/generate-changelog), so please make sure your commits follow the [conventional commit][conventional-commit-url] pattern.
+  - `react-spinner` uses [conventional-changelog-cli](https://www.npmjs.com/package/conventional-changelog-cli), so please make sure your commits follow the [conventional commit][conventional-commit-url] pattern.
+  <!--lint enable maximum-line-length-->
   <!-- markdownlint-enable MD013 -->
   - Commit to the forked repository.
   - [Sign][sign-url] your commit.

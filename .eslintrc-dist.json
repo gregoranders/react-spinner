@@ -1,18 +1,32 @@
 {
   "root": true,
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react"],
   "extends": [
+    "plugin:react/jsx-runtime",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2020,
     "sourceType": "module",
-    "ecmaFeatures": {}
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
-    "es6": true,
+    "es2021": true,
     "browser": true
   },
-  "rules": {},
-  "settings": {}
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

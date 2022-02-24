@@ -18,7 +18,7 @@
     "remark-lint-heading-whitespace",
     ["remark-lint-maximum-line-length", 120],
     ["remark-lint-maximum-heading-length", 120],
-    ["remark-lint-list-item-indent", "spacenpm run "],
+    ["remark-lint-list-item-indent", "space"],
     ["remark-lint-list-item-spacing", false],
     ["remark-lint-strong-marker", "*"],
     ["remark-lint-emphasis-marker", "_"],

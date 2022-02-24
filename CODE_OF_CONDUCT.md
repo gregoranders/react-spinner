@@ -1,3 +1,5 @@
+<!-- lint disable no-file-name-irregular-characters -->
+<!-- lint disable retext-readability -->
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -16,7 +18,9 @@ include:
 
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints and experiences
+<!--lint disable write-good-->
 - Gracefully accepting constructive criticism
+<!--lint enable write-good-->
 - Focusing on what is best for the community
 - Showing empathy towards other community members
 

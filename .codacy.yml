@@ -12,6 +12,7 @@ engines:
     enabled: true
   remark-lint:
     enabled: true
+    config: ./.remarkrc
   stylelint:
     enabled: true
   tslint:

@@ -1,5 +1,6 @@
 # @gregoranders/react-spinner
 
+<!-- markdownlint-disable-next-line MD033-->
 [<img src="./typescript.svg" />][typescript-url] [<img src="./react.svg" />][react-url]
 
 ## [React][react-url] [Spinner](./docs/index.md) intended to be used with [`Suspense`][suspense-url]
@@ -13,7 +14,7 @@
 [![Codacy Badge][codacy-coverage-image]][codacy-url]
 
 [![Main Language][language-image]][code-metric-url] [![Languages][languages-image]][code-metric-url]
-[![Code Size][code-size-image]][code-metric-url] [![Repo-Size][repo-size-image]][code-metric-url]
+[![Code Size][code-size-image]][code-metric-url] [![Repository Size][repo-size-image]][code-metric-url]
 
 ### Features
 
@@ -22,14 +23,20 @@
 - GitHub CI Integration (feature, development, master, release)
 - Code Quality via [Code Climate](./docs/codeclimate.md) and [Codacy](./docs/codacy.md)
 
+<!-- markdownlint-disable MD013 -->
+<!-- lint disable remark-lint-maximum-line-length -->
+<!-- lint disable maximum-line-length -->
 | GitHub                                                           | Coveralls                                                                  |                                                                              |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [![ReleaseMaster Build][release-build-image]][release-url]       |                                                                            | [![Release][release-image]][release-url]                                     |
+| [![Release Build][release-build-image]][release-url]             |                                                                            | [![Release][release-image]][release-url]                                     |
 | [![Master Build][master-build-image]][master-url]                | [![Master Coverage][master-coveralls-image]][master-coveralls-url]         | [![Master Version][master-version-image]][master-version-url]                |
 | [![Development Build][development-build-image]][development-url] | [![Test Coverage][development-coveralls-image]][development-coveralls-url] | [![Development Version][development-version-image]][development-version-url] |
-
+<!-- lint enable maximum-line-length -->
+<!-- lint enable remark-lint-maximum-line-length -->
+<!-- markdownlint-enable MD013 -->
 #### Example
 
+<!-- markdownlint-disable MD033 -->
 ```tsx
 import React, { Suspense } from 'react';
 import Spinner from '@gregoranders/react-spinner';
@@ -38,6 +45,7 @@ export const App = () => {
   return <Suspense fallback={<Spinner />}>...</Suspense>;
 };
 ```
+<!-- markdownlint-enable MD033 -->
 
 #### Clone repository
 

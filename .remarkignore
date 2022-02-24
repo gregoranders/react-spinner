@@ -1,0 +1,6 @@
+node-modules/
+docs/
+docs-tmp/
+temp/
+etc/
+CHANGELOG.md

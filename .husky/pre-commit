@@ -2,6 +2,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-lint-staged
+#lint-staged
 npm test
 npm run build

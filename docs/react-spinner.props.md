@@ -8,7 +8,7 @@
 <b>Signature:</b>
 
 ```typescript
-export declare type Props = Readonly<{
+export type Props = Readonly<{
     className: string;
     indicator: string;
     max: number;

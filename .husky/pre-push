@@ -6,4 +6,4 @@ npm install
 npm test
 npm run build
 npm run codeclimate
-npm run codacy
+#npm run codacy

@@ -131,7 +131,7 @@
     "@types/jest": "29.2.5",
     "@types/prop-types": "15.7.5",
     "@types/react": "18.0.26",
-    "@typescript-eslint/eslint-plugin": "5.48.0",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.47.1",
     "conventional-changelog-cli": "2.2.2",
     "cpx": "1.5.0",

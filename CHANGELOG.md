@@ -1,3 +1,5 @@
+## [0.0.6](https://github.com/gregoranders/react-spinner/compare/v0.0.4...v0.0.6) (2023-06-04)
+
 #### 0.0.3 (2020-12-10)
 
 ##### Build System / Dependencies

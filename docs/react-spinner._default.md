@@ -4,7 +4,7 @@
 
 ## \_default variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 _default: import("react").MemoExoticComponent<{

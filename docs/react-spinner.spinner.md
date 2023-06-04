@@ -6,7 +6,7 @@
 
 Spinner/Loader React component.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 Spinner: {

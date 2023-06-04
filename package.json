@@ -33,12 +33,12 @@
     "access": "public"
   },
   "scripts": {
-    "clear": "rimraf ./dist/* ./temp/* ./test/* ./node_modules ./package-lock.json ./docs-tmp/* ./etc/*",
-    "prebuild": "rimraf ./dist/* && eslint ./src/**/*.tsx",
+    "clear": "rimraf --glob ./dist/* ./temp/* ./test/* ./node_modules ./package-lock.json ./docs-tmp/* ./etc/*",
+    "prebuild": "rimraf --glob ./dist/* && eslint ./src/**/*.tsx",
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project ./ --module commonjs --target es5 --outDir ./dist/cjs",
     "build:esm": "tsc --project ./ --module es6 --declaration --declarationDir ./dist/esm --outDir ./dist/esm",
-    "postbuild": "rimraf ./dist/esm/index.d.ts* && npm run scss && npm run types && npm run lint && npm run docs",
+    "postbuild": "rimraf --glob ./dist/esm/index.d.ts* && npm run scss && npm run types && npm run lint && npm run docs",
     "scss": "cpx './src/styles.scss' './dist/'",
     "types": "cpx './build/cjs/index.d.ts*' './dist/'",
     "lint": "npm run lint:dist && npm run lint:markdown && npm run lint:remark",

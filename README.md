@@ -117,7 +117,7 @@ npm run clear
 [code-tech-debt-image]: https://img.shields.io/codeclimate/tech-debt/gregoranders/react-spinner
 [codacy-quality-image]: https://app.codacy.com/project/badge/Grade/94ba1b3b86ba4b0187f5c2ffe9085f31
 [codacy-coverage-image]: https://app.codacy.com/project/badge/Coverage/94ba1b3b86ba4b0187f5c2ffe9085f31
-[codacy-url]: https://www.codacy.com/gh/gregoranders/react-spinner/dashboard
+[codacy-url]: https://app.codacy.com/gh/gregoranders/react-spinner/dashboard
 [language-image]: https://img.shields.io/github/languages/top/gregoranders/react-spinner
 [languages-image]: https://img.shields.io/github/languages/count/gregoranders/react-spinner
 [code-size-image]: https://img.shields.io/github/languages/code-size/gregoranders/react-spinner

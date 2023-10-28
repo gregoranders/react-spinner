@@ -4,3 +4,4 @@ docs-tmp/
 temp/
 etc/
 CHANGELOG.md
+.github/**

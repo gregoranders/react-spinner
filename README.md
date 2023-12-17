@@ -1,7 +1,7 @@
 # @gregoranders/react-spinner
 
 <!-- markdownlint-disable-next-line MD033-->
-[<img src="./typescript.svg" />][typescript-url] [<img src="./react.svg" />][react-url]
+[<img src="./typescript.svg" alt="TypeScript" />][typescript-url] [<img src="./react.svg" alt="React" />][react-url]
 
 ## [React][react-url] [Spinner](./docs/index.md) intended to be used with [`Suspense`][suspense-url]
 
